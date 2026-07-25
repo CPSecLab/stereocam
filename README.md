@@ -33,3 +33,8 @@ Our study identifies two intrinsic characteristics of stereo cameras that enable
 **(b) Calibration Errors.** Pixel-level inaccuracies caused by manufacturing variations and lens distortions, which warp feature information used by stereo matching algorithms. These distortions cause corresponding pixels in the left and right images to be displaced in different directions.
 
 ![Sampling artifacts and calibration errors](img/vulnerabilities.png)
+
+
+## Acknowledgments
+
+*(to be added)*
