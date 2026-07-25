@@ -13,11 +13,11 @@ Stereo cameras are integrated into autonomous systems such as self-driving cars,
 We assess the attack on two popular stereo cameras, ZED2 and RealSense D435i, in real-world driving conditions with the vehicle moving up to speeds of 15 km/h. The attack persists for at least 0.5 sec in both day and night lighting conditions, sufficient to trigger emergency braking or unsafe maneuvers in state-of-the-art autonomous driving frameworks.  
 
 
-*(video to be added: realsense.mp4)*
+*(video to be added by Hrushikesh: realsense.mp4)*
 
 *Visualization of the attack on the RealSense D435i camera in real world scenario.*
 
-*(video to be added: zed2.mp4)*
+*(video to be added by Hrushikesh: zed2.mp4)*
 
 *Visualization of the attack on the ZED2 camera in real world scenario.*
 
@@ -27,9 +27,9 @@ We assess the attack on two popular stereo cameras, ZED2 and RealSense D435i, in
 
 ![Experimental setup](img/setup.png)
 
-*(video to be added: Video 2025-12-14 at 7.41.04 PM(1).mp4)*
+*(video to be added by Hrushikesh: Video 2025-12-14 at 7.41.04 PM(1).mp4)*
 
-*(video to be added: Video 2025-12-14 at 7.41.07 PM.mp4)*
+*(video to be added by Hrushikesh: Video 2025-12-14 at 7.41.07 PM.mp4)*
 
 *Illustration of the real-world setup used to evaluate the attack with the pattern projected on the back of a van obstacle. The setup emulates a van parked on the side of a road or in an adjacent lane. As seen in the videos, the van obstacle is not in the trajectory of the victim vehicle.*
 
