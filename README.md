@@ -4,6 +4,8 @@ To appear in [ACM CCS 2026](https://www.sigsac.org/ccs/CCS2026/), The Hague, Net
 
 Stereo cameras are integrated into autonomous systems such as self-driving cars, drones, and robots to offer precise depth estimation in a cost-effective manner compared to LiDAR technology. In this work, we reveal intrinsic vulnerabilities in the stereo cameras' inherent image pixel sampling and calibration processes. Attackers can exploit these vulnerabilities by using simple repeated patterns to exert fine-grained control over the estimated depth of genuine obstacles. Rather than inducing random depth errors, an attacker can systematically manipulate the depth of obstacles perceived by the victim autonomous systems. 
 
+![Teaser](img/teaser.png)
+
 *Our attack induces controlled depth estimation errors in stereo cameras. The attack exploits inherent stereo-camera vulnerabilities by exploiting structured, repeated patterns placed in the scene, such as those displayed on roadside billboards.*
 
 ## Demonstration of the Attack
@@ -14,7 +16,11 @@ We assess the attack on two popular stereo cameras, ZED2 and RealSense D435i, in
 
 *Visualization of the attack on the ZED2 camera in real world scenario.*
 
+![Attack scenarios](img/scenarios.png)
+
 *Illustration of scenarios explored in this work: the projected pattern on a billboard and the back of a van.*
+
+![Experimental setup](img/setup.png)
 
 *Illustration of the real-world setup used to evaluate the attack with the pattern projected on the back of a van obstacle. The setup emulates a van parked on the side of a road or in an adjacent lane. As seen in the videos, the van obstacle is not in the trajectory of the victim vehicle.*
 
@@ -25,3 +31,5 @@ Our study identifies two intrinsic characteristics of stereo cameras that enable
 **(a) Sampling Artifacts.** Pixel-level distortions introduced when continuous visual data is discretized into pixels on an image sensor. These artifacts produce intermediate pixel intensity values at high-contrast boundaries.
 
 **(b) Calibration Errors.** Pixel-level inaccuracies caused by manufacturing variations and lens distortions, which warp feature information used by stereo matching algorithms. These distortions cause corresponding pixels in the left and right images to be displaced in different directions.
+
+![Sampling artifacts and calibration errors](img/vulnerabilities.png)
