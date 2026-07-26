@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illusion of Depth</title>
+    <meta property="og:description" content="Illusion of Depth: Revealing Hidden Stereo Vision Vulnerabilities in Depth Estimation"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="flex-row">
+        <div class="paper-title text-center">
+            <h1 style="color:rgb(71, 132, 216); font-size:80px;"><strong>Illusion of Depth</strong></h1>
+        </div>
+        <div class="paper-title text-center">
+            <h1 style="color:rgb(71, 132, 216);"><strong>Revealing Hidden Stereo Vision Vulnerabilities in Depth Estimation</strong></h1>
+        </div>
+
+        <!-- TODO: author list. Confirm the final order and affiliation marks against the camera-ready. -->
+        <div id="authors" class="text-center">
+            <div class="author-row">
+                <div class="col-3 text-center"><span style="font-size:25px">Author Name</span><sup>*</sup></div>
+                <div class="col-3 text-center"><span style="font-size:25px">Author Name</span><sup>*</sup></div>
+                <div class="col-3 text-center"><span style="font-size:25px">Author Name</span><sup>&para;</sup></div>
+            </div>
+        </div>
+
+        <!-- TODO: confirm which affiliation logos are needed. Files can be copied from the Soundofinterference repo. -->
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="https://www.eng.ufl.edu/">
+                        <img src="img/uf-cjc-logo.png" alt="University of Florida logo" class="logo-img">
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://www.uec.ac.jp/eng/">
+                        <img src="img/uec_logo.png" alt="UEC logo" class="logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxed">
+        <div class="flex-row">
+            <p>Stereo cameras are integrated into autonomous systems such as self-driving cars, drones, and robots to offer precise depth estimation in a cost-effective manner compared to LiDAR technology. In this work, we reveal intrinsic vulnerabilities in the stereo cameras' inherent image pixel sampling and calibration processes. Attackers can exploit these vulnerabilities by using simple repeated patterns to exert fine-grained control over the estimated depth of genuine obstacles. Rather than inducing random depth errors, an attacker can systematically manipulate the depth of obstacles perceived by the victim autonomous systems.
+            </p>
+
+            <figure>
+                <img class="scale_img" src="img/teaser.png" alt="Teaser" style="max-width: 100%; height: auto; display: block; margin: auto;">
+                <figcaption>Our attack induces controlled depth estimation errors in stereo cameras. The attack exploits inherent stereo-camera vulnerabilities by exploiting structured, repeated patterns placed in the scene, such as those displayed on roadside billboards.</figcaption>
+            </figure>
+        </div>
+
+        <br>
+        To appear in <a href="https://www.sigsac.org/ccs/CCS2026/">ACM CCS 2026</a>, The Hague, Netherlands.
+        <!-- TODO: add the public Zenodo record for the artifacts. -->
+        <br><br>
+
+        <!-- TODO: add the preprint link once available.
+        <div class="text-center">
+            <a href="#" class="myButton">Read the preprint</a>
+        </div>
+        -->
+    </div>
+
+    <section id="demonstration">
+        <h2>Demonstration of the Attack</h2>
+        <hr>
+
+        <div class="content-block">
+            <p>We assess the attack on two popular stereo cameras, ZED2 and RealSense D435i, in real-world driving conditions with the vehicle moving up to speeds of 15 km/h. The attack persists for at least 0.5 sec in both day and night lighting conditions, sufficient to trigger emergency braking or unsafe maneuvers in state-of-the-art autonomous driving frameworks.</p>
+        </div>
+
+        <div class="attack-demo">
+            <div class="video-container">
+                <figure>
+                    <video controls playsinline preload="metadata">
+                        <source src="video/realsense.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <figcaption>Visualization of the attack on the RealSense D435i camera in real world scenario.</figcaption>
+                </figure>
+            </div>
+
+            <div class="video-container">
+                <figure>
+                    <video controls playsinline preload="metadata">
+                        <source src="video/zed2.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <figcaption>Visualization of the attack on the ZED2 camera in real world scenario.</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="image-group">
+            <figure>
+                <img class="section-img" src="img/scenarios.png" alt="Attack scenarios">
+                <figcaption>Illustration of scenarios explored in this work: the projected pattern on a billboard and the back of a van.</figcaption>
+            </figure>
+        </div>
+
+        <div class="image-group">
+            <figure>
+                <img class="section-img" src="img/setup.png" alt="Experimental setup">
+            </figure>
+        </div>
+
+        <div class="attack-demo">
+            <div class="video-container">
+                <video controls playsinline preload="metadata">
+                    <source src="video/setup1.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+
+            <div class="video-container">
+                <video controls playsinline preload="metadata">
+                    <source src="video/setup2.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <figcaption>Illustration of the real-world setup used to evaluate the attack with the pattern projected on the back of a van obstacle. The setup emulates a van parked on the side of a road or in an adjacent lane. As seen in the videos, the van obstacle is not in the trajectory of the victim vehicle.</figcaption>
+        </div>
+    </section>
+
+    <section id="vulnerabilities">
+        <h2>The Hidden Vulnerabilities</h2>
+        <hr>
+
+        <div class="content-block">
+            <p>Our study identifies two intrinsic characteristics of stereo cameras that enable depth manipulation:</p>
+
+            <p><b>(a) Sampling Artifacts.</b> Pixel-level distortions introduced when continuous visual data is discretized into pixels on an image sensor. These artifacts produce intermediate pixel intensity values at high-contrast boundaries.</p>
+
+            <p><b>(b) Calibration Errors.</b> Pixel-level inaccuracies caused by manufacturing variations and lens distortions, which warp feature information used by stereo matching algorithms. These distortions cause corresponding pixels in the left and right images to be displaced in different directions.</p>
+        </div>
+
+        <div class="image-group">
+            <figure>
+                <img class="section-img" src="img/vulnerabilities.png" alt="Sampling artifacts and calibration errors">
+            </figure>
+        </div>
+    </section>
+
+    <section id="acknowledgments">
+        <h2>Acknowledgments</h2>
+        <hr>
+
+        <div class="content-block">
+            <!-- TODO: copy the acknowledgments text, including grant numbers, from the camera-ready. -->
+            <p>(to be added)</p>
+        </div>
+    </section>
+
+</body>
+</html>
