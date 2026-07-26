@@ -1,0 +1,630 @@
+        
+    body {
+        font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    h1 {
+        font-weight: 300;
+        line-height: 1.15em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    a:link, a:visited {
+        color: #00aeff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #208799;
+    }
+
+    b:link, b:visited {
+        color: #00aeff;
+        text-decoration: none;
+    }
+
+    b:hover {
+        color: #208799;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-weight: 400;
+        margin: 16px 0px 4px 0px;
+    }
+
+    .paper-title {
+        padding: 16px 0px 16px 0px;
+    }
+
+    .col-5 {
+        width: 20%;
+        float: left;
+    }
+
+    .col-4 {
+        width: 25%;
+        float: left;
+    }
+
+    .col-3 {
+        width: 33%;
+        float: left;
+    }
+
+    .col-2 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-1 {
+        width: 100%;
+        float: left;
+    }
+
+    .row, .author-row, .affil-row {
+        overflow: auto;
+    }
+
+    .author-row, .affil-row {
+        font-size: 26px;
+    }
+
+    .row {
+        margin: 16px 0px 16px 0px;
+    }
+
+    .authors {
+        font-size: 26px;
+    }
+
+    .affil-row {
+        margin-top: 16px;
+    }
+
+    .teaser {
+        max-width: 100%;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .screenshot {
+        width: 80%;
+        border: 1px solid #ddd;
+    }
+
+    .screenshot-el {
+        margin-bottom: 1px;
+    }
+
+    hr {
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 0;
+    }
+
+    .material-icons {
+        vertical-align: -6px;
+    }
+
+    p {
+        line-height: 1.25em;
+        text-align: justify;
+    }
+
+    .caption {
+        font-size: 16px;
+        /*font-style: italic;*/
+        color: #666;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+
+    video {
+        display: block;
+        margin: auto;
+    }
+
+    
+
+    #bibtex pre {
+        font-size: 13.5px;
+        background-color: #eee;
+        padding: 16px;
+    }
+
+    .blue {
+        color: #2c82c9;
+        font-weight: bold;
+    }
+
+    .orange {
+        color: #d35400;
+        font-weight: bold;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .table {
+	width:100%;
+	border:1px solid color-form-highlight;
+    }
+
+    .spacer { height: 40px; }
+    
+    .table-header {
+    	display:flex;
+    	width:100%;
+    	background:rgb(32, 126, 181);
+    	padding:(half-spacing-unit * 1.5) 0;
+    }
+    
+    .table-row {
+    	display:flex;
+    	width:100%;
+    	padding:(half-spacing-unit * 1.5) 0;
+    
+    }
+    
+    .table-data, .header__item {
+    	flex: 1 1 20%;
+    	text-align:center;
+    }
+    
+    .header__item {
+    	text-transform:uppercase;
+    }
+
+    .paper-btn {
+        position: relative;
+        text-align: center;
+
+        display: inline-block;
+        margin: 8px;
+        padding: 8px 8px;
+
+        border-width: 0;
+        outline: none;
+        border-radius: 2px;
+
+        background-color: #48b64e;
+        color: white !important;
+        font-size: 20px;
+        width: 100px;
+        font-weight: 600;
+    }
+
+    .paper-btn-parent {
+        display: flex;
+        justify-content: center;
+        margin: 16px 0px;
+    }
+
+    .paper-btn:hover {
+        opacity: 0.85;
+    }
+
+    /* Center the entire container */
+    .container {
+        width: 100%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Make the logos align properly */
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    /* Style for each logo */
+    .logo-img {
+        width: 250px;
+        height: auto;
+        display: block;
+    }
+
+    .boxed {
+				padding: 1em 2em 2em 2em;
+				background-color: #F8F8F8;
+				max-width: 90%;
+				margin: 0 auto !important; 
+				float: none !important; ;
+	}
+	.boxed_mini {
+				padding: 0.5em 0.5em 0.5em 0.5em;
+				max-width: 40%;
+				background-color: #ECF9FF;
+				
+	}
+
+
+    .image-container {
+        position: relative; /* Position container relatively */
+        margin-right: 20px; /* Add spacing between images */
+    }
+
+    .number {
+        position: absolute; /* Position number relatively */
+        /* top: -5; /* Position at the top */
+        /* left: -5; Position at the left */ 
+        /* background-color: rgba(0, 0, 0, 0.5); Background color for visibility */
+        color: rgb(11, 11, 11); /* Text color */
+        padding: 2px 5px; /* Padding for better visibility */
+        border-radius: 5px; /* Rounded corners */
+        display: inline-block; /* Display inline */
+        font-weight: bold; /* Increase boldness */
+        /* font-size: 20px; Increase font size */
+    }
+    .gallery {
+            display: flex;
+            justify-content: space-around; /* Adjusts the spacing between images */
+            align-items: flex-start; /* Aligns images to the top */
+            gap: 20px; /* Adds space between the figures */
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        }
+    /* figure {
+            text-align: center;
+            margin: 0;
+        } */
+    figcaption {
+            font-size: 14px;
+            color: #131314;
+        }
+
+    .image {
+        display: block; /* Make image a block element */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+    }
+
+    .venue {
+        /*color: #B6486F;*/
+        font-size: 30px;
+
+    }
+
+    .myButton_l {
+				display:inline-block;
+				cursor:pointer;
+				font-family: Montserrat,sans-serif;
+				font-weight: bold;
+				font-size:15px;
+				letter-spacing: 0.1em;
+				padding:10px 10px;
+				text-decoration:none;
+			}
+    .audio-container {
+        display: flex;
+        flex-direction: column;  /* Changed from space-around to column */
+        align-items: center;
+        gap: 20px;  /* Reduced gap between audio players */
+        padding: 5px;
+    }
+    .audio-item {
+        width: 100%;
+        max-width: 500px;  /* Added max-width for better layout */
+        text-align: center;
+    }
+
+	.myButton {
+				 background-color:#6fc7ee;
+				-moz-border-radius:18px;
+				-webkit-border-radius:18px;
+				border-radius:18px;
+				display:inline-block;
+				cursor:pointer;
+				color:#ffffff;
+				font-family: Montserrat,sans-serif;
+				font-weight: bold;
+				font-size:25px;
+				letter-spacing: 0.1em;
+				padding:10px 50px;
+				text-decoration:none;
+			}
+	.myButton:hover {
+				background-color:#478fcc;
+				color:#ffffff;
+				
+			} 
+    .centered-list-container {
+    text-align: center;
+}
+
+.centered-list {
+    display: inline-block;
+    text-align: left; /* This ensures bullets are aligned correctly */
+    list-style-position: inside; /* This keeps bullets inside the list item */
+    padding: 0;
+}
+
+.centered-list li {
+    margin: 5px 0;
+}
+
+
+
+/* ========================
+   GENERAL STYLES
+======================== */
+
+/* Ensure consistent box-sizing across all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* General section styling */
+section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 2rem 0;
+}
+
+/* Generic text block for uniform layout */
+.content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    text-align: justify;
+    padding: 0 2rem;
+    line-height: 1.6;
+}
+
+/* ========================
+   IMAGE STYLES
+======================== */
+
+/* General image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Uniform styling for all image sections */
+.image-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Ensures images fit properly */
+.section-img {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+}
+
+/* ========================
+   FIGURE & CAPTION STYLES
+======================== */
+
+/* Ensures figures stack correctly */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+/* Properly formatted captions */
+figcaption {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+/* ========================
+   TABLE STYLING
+======================== */
+
+/* Ensures tables are properly formatted */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+}
+
+/* Table header formatting */
+th {
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+/* Table cell formatting */
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ========================
+   AUDIO & VIDEO STYLES
+======================== */
+
+
+/* Audio container ensuring a stacked layout */
+.audio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Each row contains two audio elements */
+.audio-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Individual audio items */
+.audio-item {
+    text-align: center; /* Center aligns text */
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center aligns the text (figcaption) */
+.audio-item figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds spacing between text and audio player */
+}
+
+/* Audio player styling */
+audio {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Video container for side-by-side layout */
+.video-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Individual video container */
+.video-box {
+    width: 45%;
+    text-align: center;
+}
+
+/* Video iframe styling */
+.video-box iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    display: block;
+}
+
+.attack-demo {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing */
+    gap: 20px; /* Space between videos */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.video-container {
+    flex: 1;
+    min-width: 45%; /* Ensures they stay side by side */
+    max-width: 48%;
+}
+
+iframe {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+======================== */
+
+@media (max-width: 1024px) {
+    .content-block {
+        max-width: 100%;
+        padding: 0 2rem;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-block {
+        max-width: 100%;
+        padding: 0 1rem;
+        font-size: 16px;
+    }
+
+    .image-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-img {
+        max-width: 100%;
+    }
+
+    .video-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video-box {
+        width: 100%;
+    }
+
+    .video-box iframe {
+        height: 250px;
+    }
+
+    .audio-group {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .audio-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .audio-item {
+        min-width: 100%;
+    }
+}
