@@ -255,6 +255,11 @@
         display: block;
     }
 
+	.logo-container .logo:last-child .logo-img {
+	    width: auto;
+	    height: 80px;
+	}
+
     .boxed {
 				padding: 1em 2em 2em 2em;
 				background-color: #F8F8F8;
